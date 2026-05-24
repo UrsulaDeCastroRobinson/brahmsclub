@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Schedule from "./pages/Schedule";
 import Booking from "./pages/Booking";
+import BrahmsFinder from "./pages/BrahmsFinder";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/schedule" element={<Schedule />} />
-		    <Route path="/booking" element={<Booking />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/brahms-finder" element={<BrahmsFinder />} />
         </Routes>
       </div>
     </Router>
